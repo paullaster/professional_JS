@@ -40,4 +40,31 @@ const theList = ['Laurence', 'Svekis', true, 35, null, undefined,
 theList.splice(2,8)
 theList.splice(0, 1, "FIRST");
 theList.splice(2,6, "MIDDLE", "hello world", "LAST" );
-console.table(theList);
+//console.table(theList);
+
+
+/**
+ * INVETORY ITEMS
+ */
+
+const invetoryItems = [
+    {
+        name:"book",
+        model:"klb",
+        cost:"700",
+        quaityt:20,
+    },
+    {
+        name:"pen",
+        model:"bic",
+        cost:"10",
+        quaityt:200,
+    },
+    {
+        name:"pencil",
+        model:"hb",
+        cost:"15",
+        quaityt:400,
+    }
+]
+console.table(invetoryItems[2].quaityt)
