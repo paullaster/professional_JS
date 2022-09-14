@@ -7,4 +7,31 @@ let findByIndex = list1.indexOf(20, 11);
 let lastOccurrence = list1.lastIndexOf(20);
 list1.sort();
 list1.reverse()
-console.table(list1);
+let removed = list1.pop();
+
+/**
+ * MULTIDIMENTIONAL ARRAY
+ */
+let fourByFourArray =[
+    [
+        [
+            [1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]
+        ]
+    ],
+    [
+        [
+            [,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]
+        ]
+    ],
+    [
+        [
+            [1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]
+        ]
+    ],
+    [
+        [
+            [1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]
+        ]
+    ]
+]
+console.table(fourByFourArray[0][0][2]);
