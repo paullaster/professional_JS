@@ -34,4 +34,10 @@ let fourByFourArray =[
         ]
     ]
 ]
-console.table(fourByFourArray[0][0][2]);
+
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined,
+{test: 'one', score: 55}, ['one', 'two']];
+theList.splice(2,8)
+theList.splice(0, 1, "FIRST");
+theList.splice(2,6, "MIDDLE", "hello world", "LAST" );
+console.table(theList);
