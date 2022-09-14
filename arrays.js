@@ -6,4 +6,5 @@ let find1 = list1.find((item)=> item === 20);
 let findByIndex = list1.indexOf(20, 11);
 let lastOccurrence = list1.lastIndexOf(20);
 list1.sort();
+list1.reverse()
 console.table(list1);
