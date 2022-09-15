@@ -1,4 +1,4 @@
-let age = parseInt(prompt("Enter your age"));
+/*let age = parseInt(prompt("Enter your age"));
 let message = "You are denied entry"
 if(age > 21){
     message ="You are allowed entry to the venue and you can also buy alcohol";
@@ -9,6 +9,10 @@ if(age > 21){
 }else{
     message;
     console.log(message);
-}
+}*/
 //console.log(typeof age);
-//console.time(age);
+//
+let ID = "invalid";
+ID ==="valid" ? 
+console.log("Allowed entry to the venue")
+: console.log("Denied access to the venue");
