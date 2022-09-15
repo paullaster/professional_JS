@@ -49,7 +49,7 @@ switch (randonNum){
 /**
  * Dynamic number game
  */
-let randNum = Math.floor(Math.random() * 10) + 1;
+/*let randNum = Math.floor(Math.random() * 10) + 1;
 let usrGamingNum = parseInt(prompt("Enter the number to play: Must be between 0 and 10"));
 if(usrGamingNum === randNum){
     console.log(`You won by matching my dynamic number: ${randNum}`);
@@ -59,4 +59,21 @@ if(usrGamingNum === randNum){
 }else{
     console.log(`Your pick was lower than my dynamic number:
      ${randNum}, Your pick: ${usrGamingNum} please try again!`);
+}*/
+
+/**
+ * Friends check game
+ */
+let listOfFriends = ['Cynthia', 'Edward','Bob','Wiscon', 'Arthur', 'Lucas','Antonine', 'Bridgid'];
+let friendName = prompt('Please enter your friend name:');
+let transformedName = friendName.charAt(0).toUpperCase() + friendName.slice(1);
+let isAFriend = listOfFriends.includes(transformedName);
+switch (isAFriend) {
+    case true:
+        console.log(`${transformedName} is my friend`);
+        break;
+    default:
+        console.log(`${transformedName} is not my friend`);
+        break;
 }
+//console.log(isAFriend);
