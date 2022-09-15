@@ -4,11 +4,9 @@
  * scissors will beat out paper
  */
 const playItems = ['rock', 'paper', 'scissors'];
-//const humanPlayer// = parseInt(prompt("Enter number between 0 and 2 to play : "));
+const humanPlayer = parseInt(prompt("Enter number between 0 and 2 to play : "));
 const computerPlayer = Math.floor(Math.random() * 2) + 1;
- //player
-const humanPlayerItemSelected = 0//= playItems[humanPlayer];
-const computerPlayerItemSelected = playItems[computerPlayer];
+
 //Shuffle playerItems
 function shufflePlayerItems(items) {
     let len = items.length;
@@ -27,6 +25,16 @@ function shufflePlayerItems(items) {
     }
     return items
 }
+
+shufflePlayerItems(playItems);
+console.log(playItems);
+ //player
+const humanPlayerItemSelected = playItems[humanPlayer];
+const computerPlayerItemSelected = playItems[computerPlayer];
+
+/**
+ * GAME LOGIC
+*/
 if(humanPlayerItemSelected === computerPlayerItemSelected){
     console.log("YOU HAVE DRAWN", humanPlayerItemSelected, computerPlayerItemSelected);
 }else if(
@@ -68,4 +76,4 @@ if(humanPlayerItemSelected === computerPlayerItemSelected){
 }else{
     console.log("WRONG INPUT")
 }
-console.log(shufflePlayerItems(playItems));
+//console.log(shufflePlayerItems(playItems));
