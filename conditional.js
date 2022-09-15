@@ -17,7 +17,7 @@ ID ==="valid" ?
 console.log("Allowed entry to the venue")
 : console.log("Denied access to the venue");
 */
-
+/*
 let randonNum = Math.floor(Math.random() *6);
 let usrInput = prompt("say something");
 switch (randonNum){
@@ -44,3 +44,19 @@ switch (randonNum){
         break;
 }
 //console.log(randonNum, usrInput);
+*/
+
+/**
+ * Dynamic number game
+ */
+let randNum = Math.floor(Math.random() * 10) + 1;
+let usrGamingNum = parseInt(prompt("Enter the number to play: Must be between 0 and 10"));
+if(usrGamingNum === randNum){
+    console.log(`You won by matching my dynamic number: ${randNum}`);
+}else if(usrGamingNum > randNum){
+    console.log(`Your pick was higher than my dynamic number:
+     ${randNum}, Your pick: ${usrGamingNum} please try again!`);
+}else{
+    console.log(`Your pick was lower than my dynamic number:
+     ${randNum}, Your pick: ${usrGamingNum} please try again!`);
+}
