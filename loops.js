@@ -126,4 +126,19 @@ for(let i = 0; i < 10; i++){
     }
     mywork.push(lessonObject);
 }
- console.table(mywork);
+ //console.table(mywork);
+
+ /**
+  * Creating MDA array
+  */
+let dynamicMda = [];
+for(let i= 0; i < 10; i++){
+    dynamicMda = [...dynamicMda, []];
+    for( let j= 0; j < 10; j++ ){
+        dynamicMda[i] = [...dynamicMda[i], []];
+        for( let k= 0; k < 10; k++ ){
+            dynamicMda[i][j] = [...dynamicMda[i][j], k+1];
+        }
+    }
+}
+console.table(dynamicMda);
