@@ -36,7 +36,7 @@ while(fibArray.length < 25){
 /**
  * Number gazing
  */
-
+/*
 let maxGuess = 10;
 let minGuess = 0;
 let guessArray = [];
@@ -84,5 +84,19 @@ if(count >8){
 }else{
     alert(`OOOOUCHHH!!!\n You have matched ${count} numbers \n
     you LOST the game, Please play again.!`);
-}
+}*/
 //console.table(guessArray);
+
+/**
+ * do{
+ * expression
+ * }while(cond)
+ */
+let step, c ;
+step = 1;
+c= 0;
+do{
+    ++step;
+    c ++;
+    console.log(step);
+}while(c < step && step < 100 );
