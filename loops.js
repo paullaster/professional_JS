@@ -7,8 +7,27 @@ while(!isInTheList && nameArray.length > 0) {
         isInTheList = true;
         let posOfSearch = nameArray.indexOf('John');
         let searchValue = nameArray[posOfSearch];
-        console.log(posOfSearch, searchValue);
+        //console.log(posOfSearch, searchValue);
     }
     let removed = nameArray.shift();
-    console.log(removed,'\n', nameArray);
+    //console.log(removed,'\n', nameArray);
 }
+
+
+/**
+ * Fibonacci
+ */
+let fnum = 0;
+let snum = 1;
+let temp;
+
+let fibArray = [];
+
+while(fibArray.length < 25){
+    fibArray.push(fnum);
+
+    temp = fnum + snum;
+    fnum = snum;
+    snum = temp;
+}
+console.table(fibArray);
