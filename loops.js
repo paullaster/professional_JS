@@ -107,4 +107,23 @@ let arr = [];
 for(let i = 0; i < 100; i++){
     arr = [...arr, i+1];
 }
-console.table(arr);
+//console.table(arr);
+
+let mywork = [];
+let lessonNumber = 0;
+for(let i = 0; i < 10; i++){
+    lessonNumber++
+    let status = 0;
+    if(arr[i]%2 === 0 ){
+        status = true;
+    }else{
+        status = false;
+    }
+    let lessonString = "Lesson ";
+    let lessonObject = {
+       Lesson : [lessonString + lessonNumber],
+        Status: [status]
+    }
+    mywork.push(lessonObject);
+}
+ console.table(mywork);
