@@ -92,6 +92,7 @@ if(count >8){
  * expression
  * }while(cond)
  */
+/*
 let step, c ;
 step = 1;
 c= 0;
@@ -100,3 +101,10 @@ do{
     c ++;
     console.log(step);
 }while(c < step && step < 100 );
+*/
+
+let arr = [];
+for(let i = 0; i < 100; i++){
+    arr = [...arr, i+1];
+}
+console.table(arr);
