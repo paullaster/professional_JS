@@ -42,21 +42,47 @@ let minGuess = 0;
 let guessArray = [];
 let randArray = [];
 let counter = 0;
+const regex = /^[0-9]+$/;
+let numbersMatched;
+let match
 while(randArray.length < maxGuess){
     let randArrayItems = Math.floor(Math.random() * maxGuess) + 1;
     randArray = [...randArray, randArrayItems];
 }
 while(guessArray.length < maxGuess){
-    let playerGuess = parseInt(prompt("Enter your guess number : Between "
-     +minGuess +  " and "+maxGuess + "\n  You have played " + counter + " rounds." ));
-    if(playerGuess > maxGuess){
-        alert(playerGuess + " is too big. Please try again. By choosing between "+maxGuess+" and "+minGuess+".");
+    let guesses = prompt("Enter your guess number : Between "
+                        +minGuess +  " and "+maxGuess 
+                        + "\n  You have played " + counter + " rounds." );
+    if(guesses.match(regex)){
+        let playerGuess = parseInt(guesses);
+        if(playerGuess > maxGuess){
+            alert(playerGuess + " is too big. Please try again. By choosing between "+maxGuess+" and "+minGuess+".");
+            break;
+        }
+        guessArray = [...guessArray, playerGuess];
+        counter++;
+    }else{
+        alert("Your selection must be a number!");
         break;
     }
-    guessArray = [...guessArray, playerGuess];
-    counter++;
 }
+let count = 0;
 for(let items of guessArray){
-    console.log(items);
+    match = randArray.indexOf(items);
+    if(match >= 0){
+        count++;
+        numbersMatched = randArray[match];
+        console.log(`Count: ${count} \n
+            Position: ${match} \n
+            Number : ${numbersMatched}`);
+    }
+    count = count;
+}
+if(count >8){
+    alert(`CONGRATULATIONS............\n You have matched ${count} numbers
+    \n You have WON KES. 10,000`);
+}else{
+    alert(`OOOOUCHHH!!!\n You have matched ${count} numbers \n
+    you LOST the game, Please play again.!`);
 }
 //console.table(guessArray);
