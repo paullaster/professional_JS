@@ -30,4 +30,18 @@ while(fibArray.length < 25){
     fnum = snum;
     snum = temp;
 }
-console.table(fibArray);
+//console.table(fibArray);
+
+
+/**
+ * Number gazing
+ */
+
+let maxGuess = 10;
+let guessArray = [];
+let randArray = [];
+while(randArray.length < maxGuess){
+    let randArrayItems = Math.floor(Math.random() * maxGuess) + 1;
+    randArray = [...randArray, randArrayItems];
+}
+console.table(randArray);
