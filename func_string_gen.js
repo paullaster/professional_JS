@@ -3,6 +3,8 @@ function stringGenerator(vala,valb,valc) {
     let a = 'a', b = 'b', c = 'c' ; 
     if(vala < 3 && valb < 3 && valc < 3){
         possibleString.push(a.repeat(vala), b.repeat(valb), c.repeat(valc));
+    }else{
+        
     }
     console.log(possibleString.join(''));
 }
