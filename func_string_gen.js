@@ -10,12 +10,16 @@ function stringGenerator(vala,valb,valc) {
 }
 
 function bigValue(a,b,c){
-    if(a < b && b < c){
-        if( a < c ){
-            console.log(c + ' is biggest');
+    if(a < b ){
+        if( c < b ){
+            console.log(b + ' is biggest');
         }
-        console.log(a + ' is biggest');
+    }else{
+        if(a < c){
+            console.log(c + ' is biggest');
+        }else{
+            console.log(a + ' is biggest');
+        }
     }
-    console.log(b + ' is biggest');
 }
-stringGenerator(2,10,3);
+stringGenerator(80,80,100);
