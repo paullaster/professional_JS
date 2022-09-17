@@ -4,7 +4,7 @@ function stringGenerator(vala,valb,valc) {
     if(vala < 3 && valb < 3 && valc < 3){
         possibleString.push(a.repeat(vala), b.repeat(valb), c.repeat(valc));
     }else{
-        
+        bigValue(vala,valb,valc);
     }
     //console.log(possibleString.join(''));
 }
@@ -12,16 +12,14 @@ function stringGenerator(vala,valb,valc) {
 function bigValue(a,b,c){
     if(a < b ){
         if( c < b ){
-            console.log('valb is biggest');
-        }else{
-            console.log('valc is biggest');
+            console.log(b + ' is biggest');
         }
     }else{
         if(a < c){
-            console.log('valc is biggest');
+            console.log(c + ' is biggest');
         }else{
-            console.log('vala is biggest');
+            console.log(a + ' is biggest');
         }
     }
 }
-stringGenerator(80,12,2);
+stringGenerator(12,12,2);
