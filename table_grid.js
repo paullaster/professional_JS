@@ -13,4 +13,10 @@ for (let x = 0; x < cells + 1; x++) {
  let temp = counter;
  row.push(temp);
 }
-console.table(grid);
+//console.table(grid);
+
+//for of loop
+let names = ['kevin', 'boo', 'bae'];
+for(let [i, j] of names.entries()) {
+
+}
