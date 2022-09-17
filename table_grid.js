@@ -16,7 +16,9 @@ for (let x = 0; x < cells + 1; x++) {
 //console.table(grid);
 
 //for of loop
-let names = ['kevin', 'boo', 'bae'];
-for(let [i, j] of names.entries()) {
-
+let names = {list:['kevin', 'boo', 'bae']};
+let nameObj = Object.entries(names);
+console.log(nameObj[0][1]);
+for(let i in names) {
+    //console.log(names[i]);
 }
