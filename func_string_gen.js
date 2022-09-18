@@ -4,22 +4,32 @@ function stringGenerator(vala,valb,valc) {
     if(vala < 3 && valb < 3 && valc < 3){
         possibleString.push(a.repeat(vala), b.repeat(valb), c.repeat(valc));
     }else{
-        bigValue(vala,valb,valc);
+        for(let i = 0; i < vala; i++){
+            if(i < 2){
+                possibleString.push(a.repeat(1));
+            }
+        }
+        for(let j = 0; j < valb; j++){
+            possibleString.push(b.repeat(1));
+        }
+        for(let k = 0; k < valc; k++){
+            possibleString.push(c.repeat(1));
+        }
     }
-    //console.log(possibleString.join(''));
+    console.log(possibleString.join(''));
 }
 
 function bigValue(a,b,c){
     if(a < b ){
         if( c < b ){
-            console.log(b + ' is biggest');
+            return b;
         }
     }else{
         if(a < c){
-            console.log(c + ' is biggest');
+            return c;
         }else{
-            console.log(a + ' is biggest');
+            return a;
         }
     }
 }
-stringGenerator(80,80,100);
+stringGenerator(8,1,1);
