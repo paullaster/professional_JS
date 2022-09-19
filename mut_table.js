@@ -10,4 +10,12 @@ for (let i = 0; i < maxMut; i++) {
     }
     mutTable.push(temp);
 }
-console.table(mutTable);
+//console.table(mutTable);
+
+const myArray = [1,5,7];
+for(el in myArray){
+ //console.log(Number(el));
+ el = Number(el) + 5;
+ console.log(el);
+}
+//console.log(myArray);
