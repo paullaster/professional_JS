@@ -1,16 +1,13 @@
 /**
  * MULTIPLICATION TABLE
  */
-let mut_table =  [];
-let col = row = 13;
-let counter = 0;
-
-for (let i = 0; i < row; i++) {
+let mutTable = [];
+const maxMut = 15;
+for (let i = 0; i < maxMut; i++) {
     let temp = [];
-    for (let j = 0; j < col; j++) {
-        counter = counter + 1;
-        temp.push(counter);
+    for (let j = 0; j < maxMut; j++) {
+        temp.push(i * j);
     }
-    mut_table.push(temp);
+    mutTable.push(temp);
 }
-console.table(mut_table);
+console.table(mutTable);
