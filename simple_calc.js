@@ -26,7 +26,7 @@ function calculator (options, x, y) {
           console.error('Unknown');
 
     }
-    console.log(result);
+    return result;
 }
 //Spread operators
 let someArray = [fnum, snum];
@@ -49,4 +49,9 @@ for(let i = 0; i < 10; i ++){
  let result = addTwoNumbers(i, 2*i);
  resultsArr.push(result);
 }
+
+for(let i = 0; i < 10; i ++){
+    let result = calculator(...opArr, ...someArray);
+    resultsArr.push(result);
+   }
 console.log(resultsArr);
