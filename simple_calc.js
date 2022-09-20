@@ -38,3 +38,15 @@ function greeter(salute, ...args) {
     console.log(salute, ...args);
 }
 greeter('Hi,', 'Geeky!', 'How is the going?', 'We\'ve been on a coding trip', 'What do you think?');
+
+
+//
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+let resultsArr = [];
+for(let i = 0; i < 10; i ++){
+ let result = addTwoNumbers(i, 2*i);
+ resultsArr.push(result);
+}
+console.log(resultsArr);
