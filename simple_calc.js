@@ -68,3 +68,10 @@ console.log(iifeValue);
 
 
 //Recursive function
+function getRecusive (count){
+    console.log(count);
+    if(count < 10){
+        getRecusive(++count);
+    }
+}
+ getRecusive(1);
