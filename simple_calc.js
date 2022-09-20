@@ -55,3 +55,10 @@ for(let i = 0; i < 10; i ++){
     resultsArr.push(result);
    }
 console.log(resultsArr);
+
+//IIFE
+(
+    (name, trait)=>{
+        return `${name} is a ${trait}`;
+    }
+)('paullaster', 'genius');
