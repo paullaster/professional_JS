@@ -29,4 +29,7 @@ function calculator (options, x, y) {
     console.log(result);
 }
 
-calculator(op, fnum, snum);
+let someArray = [fnum, snum];
+let opArr = [op]
+calculator(...opArr, ...someArray);
+
