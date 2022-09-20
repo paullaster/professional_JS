@@ -28,8 +28,13 @@ function calculator (options, x, y) {
     }
     console.log(result);
 }
-
+//Spread operators
 let someArray = [fnum, snum];
 let opArr = [op]
 calculator(...opArr, ...someArray);
 
+//Resp operators
+function greeter(salute, ...args) {
+    console.log(salute, ...args);
+}
+greeter('Hi,', 'Geeky!', 'How is the going?', 'We\'ve been on a coding trip', 'What do you think?');
