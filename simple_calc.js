@@ -57,8 +57,11 @@ for(let i = 0; i < 10; i ++){
 console.log(resultsArr);
 
 //IIFE
-(
+let iifeValue = (
     (name, trait)=>{
         return `${name} is a ${trait}`;
     }
 )('paullaster', 'genius');
+
+
+console.log(iifeValue);
