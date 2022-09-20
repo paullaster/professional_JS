@@ -3,11 +3,13 @@
  */
 
 function factorial(n) {
-    let facto = n;
-    console.log(facto);
-    if (n > 1 ){
-        factorial(n - 1);
+    console.log(n);
+    if (n === 1 ){
+        return 1;
+    }else {
+        return n * factorial(n - 1);
     }
+    
 }
 
 factorial(5);
