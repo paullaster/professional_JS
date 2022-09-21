@@ -56,7 +56,7 @@ class Vehicle {
     move (speed){
         return this.speed;
     }
-    accelerate (amount){
+    acceleration (amount){
         return this.speed += amount;
     }
 };
@@ -72,7 +72,7 @@ class Suv extends Vehicle {
             brand: this.brand,
             color: this.color,
             speed: this.speed + ' km/h',
-            acceleration: this.accelerate + ' km/h',
+            acceleration: super.acceleration (this.accelerate) + ' km/h',
             fuel: this.fuel + ' ltr',
         }
     }
@@ -84,3 +84,4 @@ let toyotaTx = new Suv ('Toyota TX Prado',
                         40, 400);
 
 console.log (toyotaTx.getDetails());
+//console.log (toyotaTx.acceleration(80));
