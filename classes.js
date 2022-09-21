@@ -61,9 +61,26 @@ class Vehicle {
     }
 };
 
-class suv extends Vehicle {
+class Suv extends Vehicle {
     constructor (name, brand, color, speed, acceleration, fuel){
         super (name, brand, color, speed, acceleration);
         this.fuel = fuel;
     }
+    getDetails () {
+        return {
+            name: this.name,
+            brand: this.brand,
+            color: this.color,
+            speed: [this.speed + ' km/h'],
+            acceleration: [this.acceleration + ' km/h'],
+            this: [this.fuel + ' ltr'],
+        }
+    }
 };
+
+
+let toyotaTx = new Suv ('Toyota TX Prado',
+                        'Toyota', 'Grey', 280,
+                        40, 400);
+
+console.log (toyotaTx.getDetails());
