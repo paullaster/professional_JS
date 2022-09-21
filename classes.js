@@ -62,8 +62,8 @@ class Vehicle {
 };
 
 class Suv extends Vehicle {
-    constructor (name, brand, color, speed, acceleration, fuel){
-        super (name, brand, color, speed, acceleration);
+    constructor (name, brand, color, speed, accelerate, fuel){
+        super (name, brand, color, speed, accelerate);
         this.fuel = fuel;
     }
     getDetails () {
@@ -71,9 +71,9 @@ class Suv extends Vehicle {
             name: this.name,
             brand: this.brand,
             color: this.color,
-            speed: [this.speed + ' km/h'],
-            acceleration: [this.acceleration + ' km/h'],
-            this: [this.fuel + ' ltr'],
+            speed: this.speed + ' km/h',
+            acceleration: this.accelerate + ' km/h',
+            fuel: this.fuel + ' ltr',
         }
     }
 };
