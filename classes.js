@@ -83,5 +83,5 @@ let toyotaTx = new Suv ('Toyota TX Prado',
                         'Toyota', 'Grey', 280,
                         40, 400);
 
-console.log (toyotaTx.getDetails());
-//console.log (toyotaTx.acceleration(80));
+//console.log (toyotaTx.getDetails());
+console.log (Suv.prototype, Vehicle.prototype);
