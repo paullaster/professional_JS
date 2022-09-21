@@ -19,7 +19,9 @@ class Person {
         let name = this.#fname + ' ' + this.#lname;
         return `Name: ${name}  Age: ${this.#age}`;
     };
-    
+    get favColor() {
+        return this.#favColor;
+    }
     /**
      * @param {any} color
      */
@@ -30,6 +32,5 @@ class Person {
 
 let peter = new Person('Peras','Omondi', 45);
 console.log(peter.name);
-peter.favoriteColor = '#f00';
-
-//console.log(peter.getName());
+peter.favoriteColor = 'red';
+console.log(peter.favColor);
