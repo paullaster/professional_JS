@@ -22,15 +22,25 @@ class Person {
     get favColor() {
         return this.#favColor;
     }
+    get firstname() { return this.#fname }
     /**
      * @param {any} color
      */
     set favoriteColor (color) {
         this.#favColor = color;
     }
+    laughs(fname) {
+        return fname +  " Laughs loudly and soft";
+    }
 };
 
 let peter = new Person('Peras','Omondi', 45);
 console.log(peter.name);
 peter.favoriteColor = 'red';
+console.log(peter.laughs(peter.firstname));
 console.log(peter.favColor);
+
+
+/**
+ * Inheritance
+ */
