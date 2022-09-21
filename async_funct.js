@@ -3,12 +3,12 @@
  */
 
 function one () {
-    console.log("one");
     three();
+    console.log("one");
+    two();
 };
 
 function two () {
-    one();
     console.log("two");
 };
 
@@ -21,4 +21,4 @@ function four () {
     console.log("four");
 };
 
-setTimeout( one, 500 );
+setTimeout(one, 1000 );
