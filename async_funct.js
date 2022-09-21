@@ -17,3 +17,5 @@ function three () {
 function four () {
     console.log("four");
 };
+
+setTimeout( one, 500 );
