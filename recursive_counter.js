@@ -12,3 +12,5 @@ function dynamicCounter (value) {
         }
     }
 }
+
+dynamicCounter(2)
