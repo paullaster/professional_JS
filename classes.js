@@ -43,4 +43,27 @@ console.log(peter.favColor);
 
 /**
  * Inheritance
+ * extends
  */
+class Vehicle {
+    constructor(name, brand, color, speed, accelerate){
+        this.name = name;
+        this.brand = brand;
+        this.color = color;
+        this.speed = speed;
+        this.accelerate = accelerate;
+    }
+    move (speed){
+        return this.speed;
+    }
+    accelerate (amount){
+        return this.speed += amount;
+    }
+};
+
+class suv extends Vehicle {
+    constructor (name, brand, color, speed, acceleration, fuel){
+        super (name, brand, color, speed, acceleration);
+        this.fuel = fuel;
+    }
+};
