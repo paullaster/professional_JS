@@ -22,5 +22,7 @@ function firstLetterToUpperCase (str) {
 arr.forEach(firstLetterToUpperCase);
 
 arrNum.forEach( (el) => {
-    console.log(Array.min (el));
+    let smallesrVal = Array.min (el, index);
+    let len = el.length;
+    console.log(`at index: ${index} the Smalles Value: ${smallesrVal} and length of the array is: ${len}`);
 });
