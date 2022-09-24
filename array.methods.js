@@ -21,8 +21,19 @@ function firstLetterToUpperCase (str) {
 //firstLetterToUpperCase('okoth')
 arr.forEach(firstLetterToUpperCase);
 
-arrNum.forEach( (el) => {
-    let smallesrVal = Array.min (el, index);
+arrNum.forEach( (el, index) => {
+    let smallesrVal = Array.min (el);
     let len = el.length;
     console.log(`at index: ${index} the Smalles Value: ${smallesrVal} and length of the array is: ${len}`);
 });
+
+
+/**
+ * 2.
+ * Filtering the array
+ * filter() method.
+ * It takes a function as an argument,
+ * the function should return a Boolean value,
+ * if the Boolean value is true, it is
+ * included in the filtered array else it is ignored.
+ */
