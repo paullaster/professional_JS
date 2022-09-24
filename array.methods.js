@@ -12,3 +12,5 @@ function firstLetterToUpperCase (str) {
     let transformedStr = str.charAt(0).toUpperCase() + str.slice(1);
     console.log(transformedStr);
 }
+//firstLetterToUpperCase('okoth')
+arr.forEach(firstLetterToUpperCase);
