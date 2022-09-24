@@ -12,7 +12,7 @@ let arrNum = [[3,6],[8,9],[1,3,2]];
 Array.min = (arr) => {
     return Math.min.apply (Math, arr);
 }
-console.log(Array.min(arrNum));
+//console.log(Array.min(arrNum));
 
 function firstLetterToUpperCase (str) {
     let transformedStr = str.charAt(0).toUpperCase() + str.slice(1);
@@ -22,5 +22,5 @@ function firstLetterToUpperCase (str) {
 arr.forEach(firstLetterToUpperCase);
 
 arrNum.forEach( (el) => {
-    console.log(el);
+    console.log(Array.min (el));
 });
