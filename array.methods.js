@@ -37,3 +37,9 @@ arrNum.forEach( (el, index) => {
  * if the Boolean value is true, it is
  * included in the filtered array else it is ignored.
  */
+let randomArray = [];
+const randomElem = Math.floor(Math.random() * 100) + 10;
+while (randomArray.length < 20) {
+    randomArray.push(randomElem);
+}
+console.log(randomArray);
