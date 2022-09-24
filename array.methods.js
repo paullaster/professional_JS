@@ -16,7 +16,7 @@ Array.min = (arr) => {
 
 function firstLetterToUpperCase (str) {
     let transformedStr = str.charAt(0).toUpperCase() + str.slice(1);
-    console.log(transformedStr);
+   // console.log(transformedStr);
 };
 //firstLetterToUpperCase('okoth')
 arr.forEach(firstLetterToUpperCase);
@@ -24,7 +24,7 @@ arr.forEach(firstLetterToUpperCase);
 arrNum.forEach( (el, index) => {
     let smallesrVal = Array.min (el);
     let len = el.length;
-    console.log(`at index: ${index} the Smalles Value: ${smallesrVal} and length of the array is: ${len}`);
+   // console.log(`at index: ${index} the Smalles Value: ${smallesrVal} and length of the array is: ${len}`);
 });
 
 
@@ -37,9 +37,13 @@ arrNum.forEach( (el, index) => {
  * if the Boolean value is true, it is
  * included in the filtered array else it is ignored.
  */
+function findingDivisblesOfFive (el) {
+    return el % 5 === 0;
+}
 let randomArray = [];
-const randomElem = Math.floor(Math.random() * 100) + 10;
-while (randomArray.length < 20) {
+while (randomArray.length < 50) {
+    const randomElem = Math.floor(Math.random() * 100) + 10;
     randomArray.push(randomElem);
 }
-console.log(randomArray);
+let filteredArray = randomArray.filter (findingDivisblesOfFive);
+console.log(filteredArray);
