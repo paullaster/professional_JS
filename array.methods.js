@@ -53,8 +53,16 @@ let filteredArray = randomArray.filter (findingDivisblesOfFive);
 
 //every method of array
 //Check if on every item if they have met certain criteria
+//checking a condition for all item in the array
 function checkNumer (item) { 
     return typeof item === 'number'
 };
 
-console.log (randomArray.every (checkNumer));
+//console.log (randomArray.every (checkNumer));
+
+
+/**
+ * copywithin() method of array
+ * copy changes the content but do not modify the length
+ */
+console.log (randomArray);
