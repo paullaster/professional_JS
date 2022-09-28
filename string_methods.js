@@ -59,7 +59,7 @@ let arrOfStr = [
     'tHis iS the SeconD SenteNSE',
     'tHis iS the THIrd SenteNSE',
     'tHis iS the FourTH SenteNSE'
-]
-arrOfStr.foreach ( (str, i) => {
+];
+arrOfStr.forEach ( (str, i) => {
     console.log (str);
-})
+});
