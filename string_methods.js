@@ -61,6 +61,7 @@ let arrOfStr = [
     'tHis iS the FourTH SenteNSE'
 ];
 const strManipulator = (str, i) => {
-    console.log (str, i);
+    let strToLowerCase = str.toLowerCase();
+    console.log (strToLowerCase, i);
 }
 arrOfStr.forEach (strManipulator);
