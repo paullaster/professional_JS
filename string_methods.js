@@ -39,5 +39,5 @@ let subStr1 = randStr.slice (lastChar);
 /**
  * Replacing part of string
  */
-let changedName = subStr1.replace ("Haurweengs", "Paullaster");
+let changedName = subStr1.replace ("haurweengs", "paullaster");
 console.log (changedName);
