@@ -23,3 +23,6 @@ let power = Math.pow (2, 3);
 let c = 9.234;
 console.log (Math.round (c));
 console.log (Math.ceil (c));
+
+//trunc method
+console.log (Math.trunc (c));
