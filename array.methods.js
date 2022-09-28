@@ -66,3 +66,4 @@ function checkNumer (item) {
  * copy changes the content but do not modify the length
  */
 console.log (randomArray);
+console.log (randomArray.copyWithin(0, 30, 45));
