@@ -35,8 +35,13 @@ let c = 9.234;
  let x = 2;
  let y = Math.exp (x);
  let z = Math.exp (y);
- console.log (`Exponents: ${y} and Exponents: ${z}`);
+ //console.log (`Exponents: ${y} and Exponents: ${z}`);
  let a = Math.log (y);
  let b = Math.log (z);
  let d = Math.log (a) + Math.log (b);
- console.log (`Log: ${a} and Log: ${b} : sum of log a and log b: ${d}`);
+ //console.log (`Log Y: ${a} and Log Z: ${b} : sum of log a and log b: ${d}`);
+
+
+ //PI
+ let pi = Math.PI
+ console.log (`PI: ${pi}`);
