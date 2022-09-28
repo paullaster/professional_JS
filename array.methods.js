@@ -37,6 +37,8 @@ arrNum.forEach( (el, index) => {
  * if the Boolean value is true, it is
  * included in the filtered array else it is ignored.
  */
+
+//Filter aarray method
 function findingDivisblesOfFive (el) {
     return el % 5 === 0;
 }
@@ -46,4 +48,13 @@ while (randomArray.length < 50) {
     randomArray.push(randomElem);
 }
 let filteredArray = randomArray.filter (findingDivisblesOfFive);
-console.log(filteredArray);
+//console.log(filteredArray);
+
+
+//every method of array
+//Check if on every item if they have met certain criteria
+function checkNumer (item) { 
+    return typeof item === 'number'
+};
+
+console.log (randomArray.every (checkNumer));
