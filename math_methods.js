@@ -15,4 +15,5 @@ let lowest = Math.min (4898,5,3223434,4456,68769,32136,9087677,3434,2323234,4554
 
 //Square, square root and power:
 let squareRoot = Math.sqrt (4);
-console.log (squareRoot);
+let power = Math.pow (2, 3);
+console.log (squareRoot, power);
