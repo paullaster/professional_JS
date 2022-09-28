@@ -79,4 +79,16 @@ function squareItems (item, index) {
 
 
 let mappedArray = randomArray.map(squareItems);
-console.log (mappedArray);
+//console.log (mappedArray);
+
+
+/**
+ * Removing duplicates from array
+ */
+function removeDuplicate (item,index, arr) {
+    console.log (item, index, arr.indexOf(item));
+    return arr.indexOf(item) === index;
+};
+
+let filteredItems = randomArray.filter(removeDuplicate);
+console.log(filteredItems);
