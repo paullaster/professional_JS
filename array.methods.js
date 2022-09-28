@@ -65,5 +65,18 @@ function checkNumer (item) {
  * copywithin() method of array
  * copy changes the content but do not modify the length
  */
-console.log (randomArray);
-console.log (randomArray.copyWithin(0, 30, 45));
+//console.log (randomArray);
+randomArray.copyWithin(0, 30, 45);
+
+
+/**
+ * mapping array with arrays map() method:
+ * returns new arrray with new tranformed valued.
+ */
+function squareItems (item) {
+    return item * item;
+};
+
+
+let mappedArray = randomArray.map(squareItems);
+console.log (mappedArray);
