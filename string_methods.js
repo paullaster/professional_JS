@@ -24,4 +24,14 @@ let randStr = ' this is a string, my girlfriend is a she Synthia, my name is hau
 let getIndexOf = randStr.indexOf ('is');
 let searchIndex = randStr.search( 't');
 let charAt = randStr.charAt( searchIndex + 1 );
-console.log (getIndexOf, searchIndex, charAt);
+//console.log (getIndexOf, searchIndex, charAt);
+
+
+
+/**
+ * Creating substring
+ */
+//slicing string
+let lastChar = randStr.lastIndexOf ('m');
+let subStr1 = randStr.slice (lastChar);
+console.log (subStr1);
