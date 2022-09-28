@@ -20,7 +20,7 @@ let newarr = stringArray.join('-');
 /**
  * Working with index and position
  */
-let randStr = ' this is a string, my girlfriend is a she Synthia, my name is haurweengs';
+let randStr = ' this is a string, my girlfriend is a she Synthia, my name is haurweengs haurweengs';
 let getIndexOf = randStr.indexOf ('is');
 let searchIndex = randStr.search( 't');
 let charAt = randStr.charAt( searchIndex + 1 );
@@ -40,4 +40,5 @@ let subStr1 = randStr.slice (lastChar);
  * Replacing part of string
  */
 let changedName = subStr1.replace ("haurweengs", "paullaster");
-console.log (changedName);
+let changedAll = subStr1.replaceAll ("haurweengs", "paullaster")
+console.log (changedAll);
