@@ -50,4 +50,16 @@ let changedAll = subStr1.replaceAll ("haurweengs", "paullaster")
 let strToUpperCase = changedName.toUpperCase();
 //console.log(strToUpperCase);
 let strToLowerCase = strToUpperCase.toLowerCase();
-console.log(strToLowerCase);
+//console.log(strToLowerCase);
+
+
+//String manipulation
+let arrOfStr = [
+    'tHis iS the FisrT SenteNSE',
+    'tHis iS the SeconD SenteNSE',
+    'tHis iS the THIrd SenteNSE',
+    'tHis iS the FourTH SenteNSE'
+]
+arrOfStr.foreach ( (str, i) => {
+    console.log (str);
+})
