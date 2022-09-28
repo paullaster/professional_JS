@@ -32,6 +32,12 @@ let charAt = randStr.charAt( searchIndex + 1 );
  * Creating substring
  */
 //slicing string
-let lastChar = randStr.lastIndexOf ('m');
+let lastChar = randStr.lastIndexOf ('my');
 let subStr1 = randStr.slice (lastChar);
-console.log (subStr1);
+//console.log (subStr1);
+
+/**
+ * Replacing part of string
+ */
+let changedName = subStr1.replace ("Haurweengs", "Paullaster");
+console.log (changedName);
