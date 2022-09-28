@@ -91,4 +91,4 @@ function removeDuplicate (item,index, arr) {
 };
 
 let filteredItems = randomArray.filter(removeDuplicate);
-console.log(filteredItems);
+zzconsole.log(filteredItems);
