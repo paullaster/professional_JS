@@ -14,5 +14,5 @@ console.log(stringArray);
  * Joining an array to strings
  */
 
-let newarr = stringArray.join(' ');
+let newarr = stringArray.join('-');
 console.log (newarr);
