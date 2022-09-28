@@ -12,4 +12,8 @@ let now = new Date();
 
 //parse date
 let d = Date.parse( 'Wed Sep 28 2022');
-console.log (d);
+//console.log (d);
+
+//Converting date to string
+let d4 =  new Date ();
+console.log(d4.toDateString());
