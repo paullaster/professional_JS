@@ -60,6 +60,7 @@ let arrOfStr = [
     'tHis iS the THIrd SenteNSE',
     'tHis iS the FourTH SenteNSE'
 ];
-arrOfStr.forEach ( (str, i) => {
-    console.log (str);
-});
+const strManipulator = (str, i) => {
+    console.log (str, i);
+}
+arrOfStr.forEach (strManipulator);
