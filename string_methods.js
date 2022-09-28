@@ -41,4 +41,9 @@ let subStr1 = randStr.slice (lastChar);
  */
 let changedName = subStr1.replace ("haurweengs", "paullaster");
 let changedAll = subStr1.replaceAll ("haurweengs", "paullaster")
-console.log (changedAll);
+//console.log (changedAll);
+
+
+/**
+ * Uppercase and lowercase
+ */
