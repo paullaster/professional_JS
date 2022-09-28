@@ -48,4 +48,6 @@ let changedAll = subStr1.replaceAll ("haurweengs", "paullaster")
  * Uppercase and lowercase
  */
 let strToUpperCase = changedName.toUpperCase();
-console.log(strToUpperCase);
+//console.log(strToUpperCase);
+let strToLowerCase = strToUpperCase.toLowerCase();
+console.log(strToLowerCase);
