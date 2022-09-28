@@ -22,5 +22,6 @@ let newarr = stringArray.join('-');
  */
 let randStr = ' this is a string, my girlfriend is a she Synthia, my name is haurweengs';
 let getIndexOf = randStr.indexOf ('is');
-let searchIndex = randStr.search( 'o');
-console.log (getIndexOf, searchIndex);
+let searchIndex = randStr.search( 't');
+let charAt = randStr.charAt( searchIndex + 1 );
+console.log (getIndexOf, searchIndex, charAt);
