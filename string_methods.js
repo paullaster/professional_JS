@@ -6,7 +6,7 @@
  */
 let mySting = 'this is a string';
 let stringArray = mySting.split(' ');
-console.log(stringArray);
+//console.log(stringArray);
 
 
 
@@ -22,4 +22,5 @@ let newarr = stringArray.join('-');
  */
 let randStr = ' this is a string, my girlfriend is a she Synthia, my name is haurweengs';
 let getIndexOf = randStr.indexOf ('is');
-console.log (getIndexOf);
+let searchIndex = randStr.search( 'o');
+console.log (getIndexOf, searchIndex);
