@@ -62,6 +62,7 @@ let arrOfStr = [
 ];
 const strManipulator = (str, i) => {
     let strToLowerCase = str.toLowerCase();
-    console.log (strToLowerCase, i);
+    let manipulatedStr = strToLowerCase.charAt(0).toUpperCase() + strToLowerCase.slice(1);
+    console.log (manipulatedStr);
 }
 arrOfStr.forEach (strManipulator);
