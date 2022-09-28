@@ -1,7 +1,15 @@
 /**
  * Wroking date and built-in date methods
  */
-let now = new Date(2022, 1, 10, 12, 10, 15, 100);
-console.log (now);
+let now = new Date();
+//console.log (now);
 
 //Method to get and set elements date
+//console.log ( now.getDay(), now.getSeconds(), now.getMilliseconds(), now.getHours(), now.getMinutes());
+
+//now.setHours (19);
+//console.log (now);
+
+//parse date
+let d = Date.parse( 'Wed Sep 28 2022');
+console.log (d);
