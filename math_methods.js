@@ -21,8 +21,16 @@ let power = Math.pow (2, 3);
 
 //Round function
 let c = 9.234;
-console.log (Math.round (c));
-console.log (Math.ceil (c));
+//console.log (Math.round (c));
+//console.log (Math.ceil (c));
 
 //trunc method
-console.log (Math.trunc (c));
+//console.log (Math.trunc (c));
+
+
+
+
+
+//Exponents and logarithms
+ let x = 2;
+ console.log (Math.exp (x));
