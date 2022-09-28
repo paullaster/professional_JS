@@ -73,8 +73,8 @@ randomArray.copyWithin(0, 30, 45);
  * mapping array with arrays map() method:
  * returns new arrray with new tranformed valued.
  */
-function squareItems (item) {
-    return item * item;
+function squareItems (item, index) {
+    return item % index;
 };
 
 
