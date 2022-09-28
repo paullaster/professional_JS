@@ -33,4 +33,6 @@ let c = 9.234;
 
 //Exponents and logarithms
  let x = 2;
- console.log (Math.exp (x));
+ let y = Math.exp (x);
+ let z = Math.exp (y);
+ console.log (`Exponents: ${y} and Exponents: ${z}`);
