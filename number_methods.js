@@ -9,4 +9,4 @@ let hi = "hi";
 let num2 = '3';
 let hi2 = "hi";
 //console.log ( isFinite (10/0));
-console.log ( Number.isInteger (num2) );
+console.log ( Number.isInteger (10) );
