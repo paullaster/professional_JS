@@ -17,3 +17,4 @@ let d = Date.parse( 'Wed Sep 28 2022');
 //Converting date to string
 let d4 =  new Date ();
 console.log(d4.toDateString());
+console.log (d4.toLocaleDateString());
