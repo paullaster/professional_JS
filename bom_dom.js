@@ -2,5 +2,5 @@
  * BOM:
  * DOM
  */
-console.dir (History);
+console.dir (navigator.credentials.get);
 history.go (-1);
