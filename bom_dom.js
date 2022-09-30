@@ -8,4 +8,6 @@
 history.go (-1);
 
 //DOM
-console.dir (document);
+while (document.readyState !== 'complete') {
+    console.dir ();
+};
