@@ -8,6 +8,13 @@
 history.go (-1);
 
 //DOM
-while (document.readyState !== 'complete') {
-    console.dir ();
-};
+// while (document.readyState !== 'complete') {
+//     console.dir ('Still loading...');
+// };
+
+//console.dir (document);
+
+//Manipulating DOM
+
+let body = document.body;
+console.dir(body);
